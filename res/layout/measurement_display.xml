@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/measurement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Measurement" />
+
+    <TextView
+        android:id="@+id/idTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID" />
+
+    <TextView
+        android:id="@+id/latitudeTextDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude" />
+
+    <TextView
+        android:id="@+id/longitudeTextDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude" />
+
+    <TextView
+        android:id="@+id/measurementTimeTextDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time" />
+
+    <TextView
+        android:id="@+id/throttlePositionTextDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Throttle Position" />
+
+    <TextView
+        android:id="@+id/rpmTextDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RPM" />
+
+    <TextView
+        android:id="@+id/speedTextDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed" />
+
+    <TextView
+        android:id="@+id/fuelTypeTextDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuel Type" />
+    
+    <TextView
+        android:id="@+id/fuelConsumptionTextDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuel Consumption" />
+
+    <TextView
+        android:id="@+id/intakePressureTextDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intake Pressure" />
+
+    <TextView
+        android:id="@+id/intakeTemperatureTextDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intake Temperature" />
+
+    <TextView
+        android:id="@+id/shortTermTrimBank1TextDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Short Term Trim Bank 1" />
+
+    <TextView
+        android:id="@+id/longTermTrimBank1TextDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Long Term Trim Bank 1" />
+
+    <TextView
+        android:id="@+id/mafTextDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MAF" />
+    
+    <TextView
+        android:id="@+id/engineLoadTextDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Engine Load" />
+
+</LinearLayout>
