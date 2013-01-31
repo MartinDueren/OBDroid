@@ -11,20 +11,22 @@
     android:background="@drawable/widget_preview_dark">
 
     <TextView
-      android:id="@+id/song_info"
+      android:id="@+id/play"
       android:layout_width="0dp"
       android:layout_height="match_parent"
       android:layout_weight="1" />
 
-    <Button
-      android:id="@+id/play_button"
+    <ImageButton
+      android:id="@+id/upload"
       android:layout_width="35dp"
       android:layout_height="match_parent" />
 
-    <Button
-      android:id="@+id/skip_button"
+    <ImageButton
+      android:id="@+id/wrench"
+	  android:src="@drawable/compass"
+ 	  android:background="@null"
+ 	  android:scaleType="centerInside"
       android:layout_width="35dp"
       android:layout_height="match_parent" />
   </LinearLayout>
 </FrameLayout>
-

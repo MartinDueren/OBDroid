@@ -20,14 +20,15 @@ public final class R {
         public static final int mpg=0x7f020006;
         public static final int pump=0x7f020007;
         public static final int temp=0x7f020008;
+        public static final int widget_preview_dark=0x7f020009;
     }
     public static final class id {
-        public static final int accel_gauge_shape=0x7f060026;
+        public static final int accel_gauge_shape=0x7f060029;
         public static final int command_linear_view=0x7f060000;
         public static final int command_result_text=0x7f060003;
         public static final int command_spinner=0x7f060001;
         public static final int command_txt_scroll=0x7f060002;
-        public static final int coolant_gauge_shape=0x7f060027;
+        public static final int coolant_gauge_shape=0x7f06002a;
         public static final int data_scroll=0x7f060014;
         public static final int data_table=0x7f060015;
         public static final int engineLoadText=0x7f06000b;
@@ -52,6 +53,7 @@ public final class R {
         public static final int mafTextDisplay=0x7f060024;
         public static final int measurement=0x7f060016;
         public static final int measurementTimeTextDisplay=0x7f06001a;
+        public static final int play=0x7f060026;
         public static final int rpmTextDisplay=0x7f06001c;
         public static final int rpm_text=0x7f060006;
         public static final int shortTermTrimBank1TextDisplay=0x7f060022;
@@ -61,13 +63,16 @@ public final class R {
         public static final int textViewList=0x7f060004;
         public static final int throttle=0x7f060008;
         public static final int throttlePositionTextDisplay=0x7f06001b;
+        public static final int upload=0x7f060027;
         public static final int vehicle_view=0x7f060005;
+        public static final int wrench=0x7f060028;
     }
     public static final class layout {
         public static final int command=0x7f030000;
         public static final int listmeasurements=0x7f030001;
         public static final int main=0x7f030002;
         public static final int measurement_display=0x7f030003;
+        public static final int widget_layout=0x7f030004;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
@@ -78,5 +83,6 @@ public final class R {
     }
     public static final class xml {
         public static final int preferences=0x7f040000;
+        public static final int widgetinfo=0x7f040001;
     }
 }
