@@ -4,6 +4,8 @@
 package com.ifgi.obd2.io;
 
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.UUID;
 import java.util.concurrent.BlockingQueue;
@@ -31,7 +33,7 @@ import com.ifgi.obd2.IPostListener;
 import com.ifgi.obd2.IPostMonitor;
 import com.ifgi.obd2.R;
 import com.ifgi.obd2.activity.ConfigActivity;
-import com.ifgi.obd2.activity.MainActivity;
+//import com.ifgi.obd2.activity.MainActivity;
 import com.ifgi.obd2.commands.ObdCommand;
 import com.ifgi.obd2.commands.protocol.EchoOffObdCommand;
 import com.ifgi.obd2.commands.protocol.LineFeedOffObdCommand;
@@ -41,6 +43,7 @@ import com.ifgi.obd2.commands.protocol.TimeoutObdCommand;
 import com.ifgi.obd2.commands.temperature.AmbientAirTemperatureObdCommand;
 import com.ifgi.obd2.enums.ObdProtocols;
 import com.ifgi.obd2.io.ObdCommandJob.ObdCommandJobState;
+import com.ifgi.obd2.widget.WidgetProvider;
 
 /**
  * This service is primarily responsible for establishing and maintaining a
@@ -213,10 +216,31 @@ public class ObdGatewayService extends Service {
 		Log.d(TAG, "Starting OBD connection..");
 
 		// Instantiate a BluetoothSocket for the remote device and connect it.
-		_sock = _dev.createRfcommSocketToServiceRecord(MY_UUID);
+		Log.d(TAG, "Instantiate Bluetooth Socket");
+		
+		
+        try {
+        	Method m = _dev.getClass().getMethod("createRfcommSocket", new Class[] {int.class});
+        	_sock = (BluetoothSocket) m.invoke(_dev, 1);
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InvocationTargetException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (NoSuchMethodException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+//		_sock = _dev.createRfcommSocketToServiceRecord(MY_UUID);
 		_sock.connect();
 
 		// Let's configure the connection.
+		
 		Log.d(TAG, "Queing jobs for connection configuration..");
 		queueJob(new ObdCommandJob(new ObdResetCommand()));
 		queueJob(new ObdCommandJob(new EchoOffObdCommand()));
@@ -346,7 +370,7 @@ public class ObdGatewayService extends Service {
 
 		// Launch our activity if the user selects this notification
 		PendingIntent contentIntent = PendingIntent.getActivity(this, 0,
-				new Intent(this, MainActivity.class), 0);
+				new Intent(this, WidgetProvider.class), 0);
 
 		// Set the info for the views that show in the notification panel.
 		notification.setLatestEventInfo(this,

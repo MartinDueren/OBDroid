@@ -15,20 +15,25 @@ public final class R {
         public static final int car=0x7f020001;
         public static final int compass=0x7f020002;
         public static final int coolant_gauge=0x7f020003;
-        public static final int ic_launcher=0x7f020004;
-        public static final int icon=0x7f020005;
-        public static final int mpg=0x7f020006;
-        public static final int pump=0x7f020007;
-        public static final int temp=0x7f020008;
-        public static final int widget_preview_dark=0x7f020009;
+        public static final int flask=0x7f020004;
+        public static final int ic_launcher=0x7f020005;
+        public static final int icon=0x7f020006;
+        public static final int map=0x7f020007;
+        public static final int mpg=0x7f020008;
+        public static final int pause=0x7f020009;
+        public static final int play=0x7f02000a;
+        public static final int pump=0x7f02000b;
+        public static final int temp=0x7f02000c;
+        public static final int upload=0x7f02000d;
+        public static final int widget_preview_dark=0x7f02000e;
     }
     public static final class id {
-        public static final int accel_gauge_shape=0x7f060029;
+        public static final int accel_gauge_shape=0x7f06002a;
         public static final int command_linear_view=0x7f060000;
         public static final int command_result_text=0x7f060003;
         public static final int command_spinner=0x7f060001;
         public static final int command_txt_scroll=0x7f060002;
-        public static final int coolant_gauge_shape=0x7f06002a;
+        public static final int coolant_gauge_shape=0x7f06002b;
         public static final int data_scroll=0x7f060014;
         public static final int data_table=0x7f060015;
         public static final int engineLoadText=0x7f06000b;
@@ -60,6 +65,7 @@ public final class R {
         public static final int shortTrimText=0x7f060010;
         public static final int spd_text=0x7f060007;
         public static final int speedTextDisplay=0x7f06001d;
+        public static final int stats=0x7f060029;
         public static final int textViewList=0x7f060004;
         public static final int throttle=0x7f060008;
         public static final int throttlePositionTextDisplay=0x7f06001b;

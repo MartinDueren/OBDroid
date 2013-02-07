@@ -19,8 +19,9 @@ import android.util.Log;
 
 public class MeasurementAdapterLocal implements MeasurementAdapter {
 
-	private final String URI = "http://giv-moellers.uni-muenster.de/uploadMeasurement.php";
-
+//	private final String URI = "http://giv-moellers.uni-muenster.de/uploadMeasurement.php";
+	private final String URI = "dummy";
+	
 	@Override
 	public void uploadMeasurement(Measurement measurement)
 			throws ClientProtocolException, IOException {
